@@ -5,6 +5,34 @@ st.set_page_config(
     page_title="Ground Improvement",
     layout="wide"
 )
+st.markdown("""
+<style>
+
+.stApp{
+    background-color:#F5F7FA;
+}
+
+h1,h2,h3{
+    color:#1E3A5F;
+}
+
+div[data-testid="stMetric"]{
+    background:white;
+    padding:15px;
+    border-radius:12px;
+    box-shadow:0px 2px 8px rgba(0,0,0,0.08);
+}
+
+section[data-testid="stSidebar"]{
+    background:#1E3A5F;
+}
+
+section[data-testid="stSidebar"] *{
+    color:white;
+}
+
+</style>
+""",unsafe_allow_html=True)
 
 st.title("Ground Improvement Design")
 st.write("ASTM / AASHTO")
