@@ -34,11 +34,6 @@ section[data-testid="stSidebar"] *{
 </style>
 """,unsafe_allow_html=True)
 
-st.image(
-    "https://images.unsplash.com/photo-1504307651254-35680f356dfd",
-    use_container_width=True
-)
-
 st.title("Ground Improvement Design")
 st.write("ASTM / AASHTO")
 
