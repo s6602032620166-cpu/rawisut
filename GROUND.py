@@ -107,14 +107,14 @@ if menu == "PVD":
 
     st.success(f"Fn = {Fn:.4f}")
 
-    if Fn > 0:
-        Th = (8*Cv*t)/(De**2*Fn)
-    else:
-        Th = 0
+    if De > 0:
+    Tr = (Cr * t) / (De**2)
+else:
+    Tr = 0
+    
+    st.success(f"Tr = {Tr:.4f}")
 
-    st.success(f"Th = {Th:.4f}")
-
-    Ur = (1-math.exp(-8*Th/math.pi**2))*100
+    Ur = 1 - math.exp(-8 * Tr / Fn)
 
     st.success(f"Degree of Consolidation = {Ur:.2f}%")
 
