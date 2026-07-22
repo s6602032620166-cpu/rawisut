@@ -116,7 +116,7 @@ if menu == "PVD":
 
     Ur = 1 - math.exp(-8 * Tr / Fn)
 
-    st.success(f"Degree of Consolidation = {Ur:.2f}%")
+    st.success(f"Degree of Consolidation = {Ur*100:.2f}%")
 
 # =====================================================
 
