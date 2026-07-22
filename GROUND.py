@@ -108,9 +108,9 @@ if menu == "PVD":
     st.success(f"Fn = {Fn:.4f}")
 
     if De > 0:
-    Tr = (Cr * t) / (De**2)
-else:
-    Tr = 0
+        Tr = (Cr * t) / (De**2)
+    else:
+        Tr = 0
     
     st.success(f"Tr = {Tr:.4f}")
 
