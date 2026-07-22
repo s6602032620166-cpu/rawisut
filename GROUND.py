@@ -52,10 +52,10 @@ if menu == "PVD":
 
     Kr = st.number_input("Kr", value=7.0)
     Kv = st.number_input("Kv", value=1.0)
-    Cv = st.number_input("Cv (m²/day)", value=0.01)
+    Cv = st.number_input("Cv (cm²/day)", value=0.01)
 
     if Kv != 0:
-        Cr = Kr/Kv
+        Cr = (Kr/Kv)*Cv
     else:
         Cr = 0
 
