@@ -50,7 +50,7 @@ if menu == "PVD":
 
     st.subheader("Soil Parameters")
 
-    Kr = st.number_input("Kr", value=1.0)
+    Kr = st.number_input("Kr", value=7.0)
     Kv = st.number_input("Kv", value=1.0)
     Cv = st.number_input("Cv (m²/day)", value=0.01)
 
@@ -65,7 +65,7 @@ if menu == "PVD":
 
     t = st.number_input(
         "Time (days)",
-        value=30.0
+        value=90.0
     )
 
     Hdr = st.number_input(
