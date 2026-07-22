@@ -119,9 +119,9 @@ if menu == "PVD":
     st.success(f"Degree of Consolidation = {Ur*100:.2f}%")
 
     if Ur >= 90.00:
-        st.success("✅ Result : PASS (ผ่านเกณฑ์ เนื่องจาก Degree of Consolidation ≥ 90.00%)")
+        st.success("✅ Result : PASS (ผ่านเกณฑ์ เนื่องจาก Degree of Consolidation ≥ 0.9)")
     else:
-        st.error("❌ Result : FAIL (ไม่ผ่านเกณฑ์ เนื่องจาก Degree of Consolidation < 90.00%)")
+        st.error("❌ Result : FAIL (ไม่ผ่านเกณฑ์ เนื่องจาก Degree of Consolidation < 0.9)")
 
 # =====================================================
 
