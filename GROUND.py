@@ -87,7 +87,7 @@ if menu == "PVD":
     a = st.number_input("Drain Width a (mm)", value=100.0)
     b = st.number_input("Drain Thickness b (mm)", value=4.0)
 
-    Dw = 2*(a+b)/math.pi
+    Dw = (a+b)/2
 
     st.success(f"Dw = {Dw:.2f} mm")
 
