@@ -2,7 +2,7 @@ import math
 import streamlit as st
 
 st.set_page_config(
-    page_title="Ground Improvement",
+    page_title="🏗️Ground Improvement",
     layout="wide"
 )
 
@@ -209,7 +209,9 @@ if menu == "PVD":
 
     Ur = 1 - math.exp(-8 * Tr / Fn)
 
-    st.success(f"Degree of Consolidation = {Ur*100:.2f}%")
+    st.metric("Degree of Consolidation",
+    f"{Ur*100:.2f} %"
+    )
 
     if Ur >= 0.9:
         st.success("✅ Result : PASS (ผ่านเกณฑ์ เนื่องจาก Degree of Consolidation ≥ 90.00%)")
