@@ -5,34 +5,99 @@ st.set_page_config(
     page_title="Ground Improvement",
     layout="wide"
 )
+
 st.markdown("""
 <style>
 
+/* ==========================
+   Background
+========================== */
 .stApp{
     background-color:#F5F7FA;
 }
 
-h1,h2,h3{
-    color:#1E3A5F;
+/* ==========================
+   Main Title & Headers
+========================== */
+
+h1{
+    color:#1E3A5F !important;
+    font-weight:700;
 }
+
+h2,h3{
+    color:#1E3A5F !important;
+    font-weight:600;
+}
+
+/* ==========================
+   Body Text
+========================== */
+
+p,
+label,
+span,
+small,
+li,
+div,
+.stMarkdown,
+.stCaption{
+    color:#6B4F3A !important;
+}
+
+/* ==========================
+   Input Labels
+========================== */
+
+.stSelectbox label,
+.stNumberInput label,
+.stRadio label{
+    color:#6B4F3A !important;
+    font-weight:600;
+}
+
+/* ==========================
+   Metric Card
+========================== */
 
 div[data-testid="stMetric"]{
     background:white;
     padding:15px;
     border-radius:12px;
-    box-shadow:0px 2px 8px rgba(0,0,0,0.08);
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
 }
+
+div[data-testid="stMetricLabel"]{
+    color:#6B4F3A !important;
+}
+
+div[data-testid="stMetricValue"]{
+    color:#6B4F3A !important;
+}
+
+/* ==========================
+   Success / Info / Error
+========================== */
+
+div[data-testid="stAlert"]{
+    border-radius:10px;
+    font-weight:600;
+}
+
+/* ==========================
+   Sidebar
+========================== */
 
 section[data-testid="stSidebar"]{
     background:#1E3A5F;
 }
 
 section[data-testid="stSidebar"] *{
-    color:white;
+    color:white !important;
 }
 
 </style>
-""",unsafe_allow_html=True)
+""", unsafe_allow_html=True)
 
 st.title("Ground Improvement Design")
 st.write("ASTM / AASHTO")
